@@ -1,0 +1,239 @@
+    /*===========Reset css========*/
+    
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    small,
+    strong,
+    a,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /*===========Header========*/
+    
+    .template-time-date {
+        color: white;
+    }
+    
+    .template-time-date .date,
+    .time i {
+        font-size: 1.1rem;
+    }
+    
+    .template-time-date .date,
+    .time span {
+        font-size: .8rem;
+    }
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .main-navbar {
+        background-color: rgb(20, 19, 17);
+    }
+    
+    .main-navbar .navbar-brand {
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+    
+    .main-navbar .nav-item {
+        margin-left: 30px;
+    }
+    
+    .main-navbar .navbar-brand span {
+        font-size: 1rem !important;
+        font-weight: bold;
+        color: gray;
+    }
+    
+    .main-navbar .navbar-toggler:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        border: none !important;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        background: gray;
+        width: 3rem;
+        height: 3rem;
+        margin: auto;
+        border-radius: 50px;
+    }
+    
+    .hero .carousel-item {
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+    
+    .hero .hero-content {
+        background: rgba(22, 33, 59, 0.36);
+        width: 700px;
+        padding: .4rem 1rem 1rem 1rem;
+        border-radius: 2px;
+        border: 1px solid #eee;
+    }
+    
+    .carousel-item .hero-content {
+        position: relative;
+    }
+    
+    .hero .carousel-item .row .col-lg-6:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero .carousel-item .row {
+        height: 100vh;
+    }
+    
+    .hero .carousel-item .col-xl-6:nth-child(1) {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .hero .carousel-item .hero-content h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .hero .carousel-item .hero-content p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .hero .carousel-item .row .col-lg-6:nth-child(1) {
+        position: relative;
+    }
+    
+    .hero .carousel-item .overlay-hero-slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgb(133, 115, 115);
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+    }
+    
+    .hero .carousel-item button {
+        padding: .1rem 2rem .1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        background: transparent;
+        border: 1px solid #eee;
+        color: white;
+        transition: .5s ease;
+    }
+    
+    .hero .carousel-item button:hover {
+        background: white;
+        color: black;
+    }
+    /*---------services section-----------*/
+    
+    .services-inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+    
+    .service {
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: transparent;
+        transition: transform 0.5s, background 0.5s;
+    }
+    
+    .service i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #303ef7;
+    }
+    
+    .service h2 {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    .service:hover {
+        background: #141311;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    
+    .service:hover i {
+        color: #fff;
+    }
+    
+    .section-title {
+        text-align: left;
+    }
+    
+    .section-title .sub-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .section-title .title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .our-service {
+        padding: .1rem 2rem .1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        background: transparent;
+        border: 1px solid #eee;
+        color: rgb(0, 0, 0);
+        transition: .5s ease;
+    }
+    
+    .our-service:hover {
+        background: black;
+        color: white;
+    }
+    /*-------about us---------*/
