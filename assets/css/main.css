@@ -94,7 +94,6 @@
     .hero .carousel-item {
         width: 100%;
         height: 100%;
-        background: black;
     }
     
     .hero .hero-content {
@@ -182,12 +181,17 @@
         cursor: pointer;
         background: transparent;
         transition: transform 0.5s, background 0.5s;
+        z-index: 1;
     }
     
-    .service i {
+    .service svg {
         font-size: 40px;
         margin-bottom: 10px;
         color: #303ef7;
+    }
+    
+    .service:hover svg {
+        color: white;
     }
     
     .service h2 {
@@ -207,6 +211,7 @@
     
     .section-title {
         text-align: left;
+        z-index: 1;
     }
     
     .section-title .sub-title {
@@ -237,3 +242,45 @@
         color: white;
     }
     /*-------about us---------*/
+    
+    .box-shadow-one {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    
+    .linear-bg-one {
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    }
+    
+    .clip-path-one {
+        position: relative;
+    }
+    
+    .clip-path-one::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        clip-path: polygon(49% 49%, 100% 100%, 0 100%, 0 0);
+        border: 1px solid #eee;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: #f5f5f5;
+    }
+    
+    .clip-path-two {
+        position: relative;
+    }
+    
+    .clip-path-two::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        clip-path: polygon(100% 0, 100% 100%, 50% 50%, 0 0);
+        border: 1px solid #eee;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: #f5f5f5;
+    }
