@@ -53,11 +53,11 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 11;
     }
     
     .main-navbar {
-        background-color: rgb(20, 19, 17);
+        /* background-color: rgb(20, 19, 17); */
     }
     
     .main-navbar .navbar-brand {
@@ -81,89 +81,168 @@
         outline: none !important;
         border: none !important;
     }
+    /*--hero section---*/
+    /*----social media------*/
     
-    .carousel-control-prev,
-    .carousel-control-next {
-        background: gray;
-        width: 3rem;
-        height: 3rem;
-        margin: auto;
-        border-radius: 50px;
-    }
-    
-    .hero .carousel-item {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .hero .hero-content {
-        background: rgba(22, 33, 59, 0.36);
-        width: 700px;
-        padding: .4rem 1rem 1rem 1rem;
-        border-radius: 2px;
-        border: 1px solid #eee;
-    }
-    
-    .carousel-item .hero-content {
+    .hero-section {
         position: relative;
     }
     
-    .hero .carousel-item .row .col-lg-6:nth-child(2) {
+    .social-media {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 50px;
+        height: auto;
+        background: #141311;
+        z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .hero .carousel-item .row {
-        height: 100vh;
+    .social-media ul {
+        margin: 0;
+        padding: 0;
     }
     
-    .hero .carousel-item .col-xl-6:nth-child(1) {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    .social-media ul li {
+        margin-top: 20px;
     }
     
-    .hero .carousel-item .hero-content h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        color: white;
-    }
-    
-    .hero .carousel-item .hero-content p {
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-    }
-    
-    .hero .carousel-item .row .col-lg-6:nth-child(1) {
-        position: relative;
-    }
-    
-    .hero .carousel-item .overlay-hero-slider {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgb(133, 115, 115);
-        width: 100%;
-        height: 100%;
-        opacity: .5;
-    }
-    
-    .hero .carousel-item button {
-        padding: .1rem 2rem .1rem 2rem;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-top: 1rem;
-        background: transparent;
-        border: 1px solid #eee;
-        color: white;
+    .social-media ul li a {
+        background: #ffffff;
+        padding: .5rem;
         transition: .5s ease;
     }
     
-    .hero .carousel-item button:hover {
-        background: white;
-        color: black;
+    .social-media ul li a i {
+        color: #959493;
+    }
+    
+    .social-media ul li a:hover {
+        background: #484847;
+    }
+    
+    .social-media ul li a:hover i {
+        color: red;
+    }
+    /* transition duration to control the speed of fade effect */
+    
+    .carousel-item {
+        transition: transform 2.6s ease-in-out;
+    }
+    
+    .carousel-fade .active.carousel-item-start,
+    .carousel-fade .active.carousel-item-end {
+        transition: opacity 0s 2.6s;
+    }
+    
+    .hero .carousel-inner .carousel-item {
+        height: 100vh;
+    }
+    
+    .carousel-inner {
+        position: relative;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        background: #141311;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+    
+    .carousel-control-next {
+        left: 70px;
+        bottom: 0;
+        margin: auto 0;
+    }
+    
+    .carousel-control-prev {
+        left: 15px;
+        bottom: 0;
+        margin: auto 0;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev span i {
+        font-size: 2rem;
+    }
+    
+    .hero .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    
+    .parallax {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        z-index: 111;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .div-animation-hero {
+        position: absolute;
+        width: fit-content;
+        height: 150px;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .hero-slider-caption h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .hero-slider-caption h5 {
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .hero-slider-caption button {
+        padding: .2rem 1.2rem .2rem 1.2rem;
+        background: #141311;
+        border: none;
+        color: white;
+        margin-block: 1rem;
+    }
+    
+    .carousel-item {
+        position: relative;
+    }
+    
+    .carousel-item:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: black;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        opacity: .5;
     }
     /*---------services section-----------*/
     
@@ -284,3 +363,4 @@
         position: absolute;
         background: #f5f5f5;
     }
+    /*-----about us------*/

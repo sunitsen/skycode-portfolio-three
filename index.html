@@ -26,24 +26,26 @@
 <body>
     <!-------------header-------------->
     <header>
-        <div class="container-fluid p-0">
-            <div class="row ">
+        <div class="container p-0">
+            <div class="row">
                 <!--template date time-->
                 <div class="col-xl-12 px-3">
                     <div class="template-time-date d-flex justify-content-between align-items-center">
                         <!--date-->
-                        <div class="date d-flex justify-content-start align-items-center">
+                        <div class="date d-flex justify-content-start align-items-center ms-2">
                             <i class="bi bi-calendar4"></i><span class="ms-2">Friday, March 4, 2022</span>
                         </div>
                         <!--time-->
-                        <div class="time d-flex justify-content-start align-items-center"><i class="bi bi-stopwatch"></i><span class="ms-2">5:07 PM</span></div>
+                        <div class="time d-flex justify-content-start align-items-center me-3">
+                            <i class="bi bi-stopwatch"></i><span class="ms-2">5:07 PM</span>
+                        </div>
                     </div>
                 </div>
                 <!--template main navbar-->
                 <div class="col-xl-12 p-0">
                     <div class="main-navbar">
                         <nav class="navbar navbar-expand-lg navbar-dark">
-                            <div class="container-fluid">
+                            <div class="container">
                                 <a class="navbar-brand" href="#">sky<span>code</span></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
                     <span class="navbar-toggler-icon"></span>
@@ -71,233 +73,228 @@
                                         </li> -->
                                     </ul>
                                     <ul class="navbar-nav ms-auto">
-                                        <li class="nav-item"><a class="nav-link" href="#"><span><i class="bi bi-telephone me-2"></i></span> Contact Us  </a></li>
-
-
-                                    </ul>
-                                </div>
-                                <!-- navbar-collapse.// -->
-                            </div>
-                            <!-- container-fluid.// -->
-                        </nav>
-                    </div>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span><i class="bi bi-telephone me-2"></i></span> Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- navbar-collapse.// -->
                 </div>
+                <!-- container-fluid.// -->
+              </nav>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <section id="hero-section" class="hero-section">
-        <div class="container-fluid p-0">
-            <!--hero section-->
-            <!--hero elements-->
-            <div id="hero" class="hero">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item linear-bg-one active">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12" style="background-image: url(./assets/template-images/hero1.jpg);">
-                                    <a href="#">
-                                        <div class="overlay-hero-slider"></div>
-                                    </a>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="bi bi-twitter"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="bi bi-instagram"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                                    <div class="hero-content">
-                                        <a href="#">
-                                            <h1>Lorem ipsum dolor sit.</h1>
-                                        </a>
-                                        <a href="#">
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ipsa distinctio corrupti dolore iusto.</p>
-                                        </a>
-                                        <button type="button" class="Read more">Read more</button>
+                                <div class="container-fluid p-0">
+                                    <div id="hero" class="hero">
+                                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                                            <ol class="carousel-indicators">
+                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="assets/template-images/red1.jpg" alt="First slide" />
+                                                    <div class="hero-slider-caption">
+                                                        <div class="parallax">
+                                                            <div class="div-animation-hero layer source-layer4">
+                                                                <a href="#">
+                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                                                                </a>
+                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
+                                                                <button type="button" class="hero-btn">Explore More..</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="assets/template-images/red2.jpg" alt="Second slide" />
+                                                    <div class="hero-slider-caption">
+                                                        <div class="parallax">
+                                                            <div class="div-animation-hero layer source-layer4">
+                                                                <a href="#">
+                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                                                                </a>
+                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
+                                                                <button type="button" class="hero-btn">Explore More..</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="assets/template-images/red3.jpg" alt="Third slide" />
+                                                    <div class="hero-slider-caption">
+                                                        <div class="parallax">
+                                                            <div class="div-animation-hero layer source-layer4">
+                                                                <a href="#">
+                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                                                                </a>
+                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
+                                                                <button type="button" class="hero-btn">Explore More..</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                                                <span class="" aria-hidden="true"><i class="bi bi-caret-left"></i></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                                                <span class="" aria-hidden="true"><i class="bi bi-caret-right"></i></span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item linear-bg-one">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12" style="background-image: url(./assets/template-images/hero2.jpg);">
-                                    <a href="#">
-                                        <div class="overlay-hero-slider"></div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                                    <div class="hero-content">
-                                        <a href="#">
-                                            <h1>Lorem ipsum dolor sit.</h1>
-                                        </a>
-                                        <a href="#">
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ipsa distinctio corrupti dolore iusto.</p>
-                                            <button type="button" class="Read more">Read more</button>
-
-                                        </a>
-
+                                </section>
+                                <!--------section one-------------->
+                                <section id="section-one" class="section-one py-5">
+                                    <div class="container">
+                                        <div class="row box-shadow-one linear-bg-one">
+                                            <div class="col-xl-6 d-flex justify-content-center align-items-center clip-path-one p-2">
+                                                <div class="section-title py-3">
+                                                    <div class="sub-title">Our services</div>
+                                                    <div class="title">what we can do for you</div>
+                                                    <button type="button" class="our-service">Our services</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 clip-path-two p-2">
+                                                <div class="container services">
+                                                    <div class="row services-inner">
+                                                        <div class="service">
+                                                            <i class="fas fa-laptop-code"></i>
+                                                            <h2>Web Design</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                        <div class="service">
+                                                            <i class="fas fa-chart-line"></i>
+                                                            <h2>Marketing</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                        <div class="service">
+                                                            <i class="fab fa-sketch"></i>
+                                                            <h2>Graphics</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                        <div class="service">
+                                                            <i class="fas fa-database"></i>
+                                                            <h2>Data Analysis</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                        <div class="service">
+                                                            <i class="fas fa-mobile-alt"></i>
+                                                            <h2>App Development</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                        <div class="service">
+                                                            <i class="fas fa-file-invoice"></i>
+                                                            <h2>Accounting</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item linear-bg-one">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12" style="background-image: url(./assets/template-images/hero3.jpg);">
-                                    <a href="#">
-                                        <div class="overlay-hero-slider"></div>
-                                    </a>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                                    <div class="hero-content">
-                                        <a href="#">
-                                            <h1>Lorem ipsum dolor sit.</h1>
-                                        </a>
-                                        <a href="#">
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ipsa distinctio corrupti dolore iusto.</p>
-                                            <button type="button" class="Read more">Read more</button>
-
-                                        </a>
-
+                                </section>
+                                <!------section two----->
+                                <section id="section-two" class="section-two py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="section-title py-3">
+                                                    <div class="sub-title text-center">About Us</div>
+                                                    <div class="title text-center">Who we Are</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!--------section one-------------->
-    <section id="section-one" class="section-one py-5 ">
-        <div class="container">
-            <div class="row box-shadow-one linear-bg-one">
-                <div class="col-xl-6 d-flex justify-content-center align-items-center clip-path-one p-2">
-                    <div class="section-title py-3">
-                        <div class="sub-title">Our services</div>
-                        <div class="title">what we can do for you</div>
-                        <button type="button" class="our-service">Our services</button>
-                    </div>
-                </div>
-                <div class="col-xl-6 clip-path-two p-2">
-                    <div class="container services">
+                                </section>
 
-                        <div class="row services-inner">
-                            <div class="service">
-                                <i class="fas fa-laptop-code"></i>
-                                <h2>Web Design</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
-                            <div class="service">
-                                <i class="fas fa-chart-line"></i>
-                                <h2>Marketing</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
-                            <div class="service">
-                                <i class="fab fa-sketch"></i>
-                                <h2>Graphics</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
-                            <div class="service">
-                                <i class="fas fa-database"></i>
-                                <h2>Data Analysis</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
-                            <div class="service">
-                                <i class="fas fa-mobile-alt"></i>
-                                <h2>App Development</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
-                            <div class="service">
-                                <i class="fas fa-file-invoice"></i>
-                                <h2>Accounting</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae?
-                                </p>
-                            </div>
+                                <!-- Main JS -->
+                                <script src="assets/js/jQuary.js"></script>
+                                <script src="assets/js/main.js"></script>
+                                <!-- BootStrap JS -->
+                                <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+                                <script src="assets/js/bootstrap.bundle.min.js"></script>
+                                <!-- FontAwsome JS -->
+                                <script src="assets/fontawesome-free-6.0.0-web/js/all.js"></script>
+                                <script src="assets/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+                                <script src="assets/js/isotop.js"></script>
+                                <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+                                <script></script>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------section three----->
-    <section id="section-two" class="section-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
+                                <script>
+                                    //isotop
+                                    // init Isotope
+                                    var $grid = $(".isotop-grid").isotope({
+                                        // options
+                                    });
+                                    // filter items on button click
+                                    $(".isotop-btn-control").on("click", "li", function() {
+                                        var filterValue = $(this).attr("data-filter");
+                                        $grid.isotope({
+                                            filter: filterValue,
+                                        });
+                                    });
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main JS -->
-    <script src="assets/js/jQuary.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- BootStrap JS -->
-    <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- FontAwsome JS -->
-    <script src="assets/fontawesome-free-6.0.0-web/js/all.js"></script>
-    <script src="assets/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/isotop.js"></script>
-    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script></script>
-
-    <script>
-        //isotop
-        // init Isotope
-        var $grid = $(".isotop-grid").isotope({
-            // options
-        });
-        // filter items on button click
-        $(".isotop-btn-control").on("click", "li", function() {
-            var filterValue = $(this).attr("data-filter");
-            $grid.isotope({
-                filter: filterValue,
-            });
-        });
-
-        //owl slider
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 50,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                },
-            },
-        });
-    </script>
+                                    //owl slider
+                                    $(".owl-carousel").owlCarousel({
+                                        loop: true,
+                                        margin: 50,
+                                        autoplay: true,
+                                        autoplayTimeout: 4000,
+                                        autoplayHoverPause: true,
+                                        nav: false,
+                                        responsive: {
+                                            0: {
+                                                items: 1,
+                                            },
+                                            600: {
+                                                items: 2,
+                                            },
+                                            1000: {
+                                                items: 3,
+                                            },
+                                        },
+                                    });
+                                </script>
 </body>
 
 </html>
