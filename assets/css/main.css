@@ -241,7 +241,7 @@
         transition: opacity 0s 2.6s;
     }
     
-    .hero .carousel-inner .carousel-item {
+    .hero .carousel-inner .carousel-item img {
         height: 100vh;
     }
     
