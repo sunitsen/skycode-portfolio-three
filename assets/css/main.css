@@ -54,6 +54,7 @@
         left: 0;
         width: 100%;
         z-index: 11;
+        border-bottom: .5px solid #EEE;
     }
     
     .main-navbar {
@@ -169,9 +170,7 @@
     }
     
     .search-toggle {
-        position: absolute;
-        right: -100px;
-        top: 48px;
+        margin-top: -4px;
     }
     
     .search-toggle button {
