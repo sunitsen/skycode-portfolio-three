@@ -62,7 +62,7 @@
     }
     
     .main-navbar .navbar-brand {
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: bold;
         color: rgb(255, 255, 255);
     }
@@ -71,8 +71,17 @@
         margin-left: 30px;
     }
     
+    .main-navbar .nav-item .nav-link {
+        font-size: 1.1rem;
+    }
+    
+    .main-navbar .nav-item.active .nav-link {
+        color: white;
+        font-size: 1.2rem;
+    }
+    
     .main-navbar .navbar-brand span {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         font-weight: bold;
         color: #303ef7;
     }
@@ -92,7 +101,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        top: 3.1rem;
+        top: 3.3rem;
         left: 0;
         background-color: #303ef7;
         visibility: hidden;
@@ -105,6 +114,10 @@
     .navbar .active:before {
         visibility: visible;
         width: 100%;
+    }
+    
+    .main-navbar .navbar-nav:nth-child(2) .nav-link:before {
+        display: none;
     }
     /*---search box----*/
     
@@ -125,6 +138,15 @@
     
     .search-toggle.opened .search-icon.icon-close {
         display: block;
+    }
+    
+    .search-icon {
+        color: #303ef7;
+        transition: .5s ease;
+    }
+    
+    .search-icon:hover {
+        color: #fff;
     }
     
     .search-container {
@@ -328,7 +350,7 @@
         background: #141311;
         border: none;
         color: white;
-        margin-block: 1rem;
+        margin-top: 2rem;
         margin-left: 14px;
     }
     
@@ -349,48 +371,6 @@
         opacity: .5;
     }
     /*---------services section-----------*/
-    
-    .services-inner {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 30px;
-    }
-    
-    .service {
-        text-align: center;
-        padding: 25px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        background: transparent;
-        transition: transform 0.5s, background 0.5s;
-        z-index: 1;
-    }
-    
-    .service svg {
-        font-size: 40px;
-        margin-bottom: 10px;
-        color: #303ef7;
-    }
-    
-    .service:hover svg {
-        color: white;
-    }
-    
-    .service h2 {
-        font-weight: 600;
-        margin-bottom: 8px;
-    }
-    
-    .service:hover {
-        background: #141311;
-        color: #fff;
-        transform: scale(1.05);
-    }
-    
-    .service:hover i {
-        color: #fff;
-    }
     
     .section-title {
         text-align: left;
@@ -424,136 +404,21 @@
         background: black;
         color: white;
     }
-    /*-------about us---------*/
-    /* .box-shadow-one {
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+    .services-items-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
-    .clip-path-one {
-        position: relative;
-    }
-    
-    .clip-path-one::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        display: block;
-        clip-path: polygon(49% 49%, 100% 100%, 0 100%, 0 0);
-        border: 1px solid #eee;
-        left: 0;
-        top: 0;
-        position: absolute;
-        background: #f5f5f515;
-    }
-    
-    .clip-path-two {
-        position: relative;
-    }
-    
-    .clip-path-two::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        display: block;
-        clip-path: polygon(100% 0, 100% 100%, 50% 50%, 0 0);
-        border: 1px solid #eee;
-        left: 0;
-        top: 0;
-        position: absolute;
-        background: #f5f5f583;
-    }
-    
-    .bg-dotted {
-        position: relative;
-    }
-    .bg-dotted:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgb(5, 15, 7);
-        position: absolute;
-        opacity: .5;
-    } 
-    
-    .bg-dotted {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    
-    .bg-dotted:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.808);
-        top: 0;
-        left: 0;
-        position: absolute;
-        opacity: .5;
-    } 
-   
-   */
-    
-    .services-tabs .nav-item button {
-        border-radius: 0 !important;
-        padding: 2rem;
-        position: relative;
-    }
-    
-    .services-tabs .nav-item button.active svg {
-        color: white;
-    }
-    
-    .services-tabs .nav-item button.active a {
-        color: white;
-    }
-    
-    .services-tabs .nav-item button svg {
-        font-size: 2rem;
-        color: black;
-        transition: .5s ease;
-    }
-    
-    .services-tabs .nav-item button a {
-        transition: .5s ease;
-    }
-    
-    .services-tabs .nav-item button:hover svg {
-        color: black;
-    }
-    
-    .services-tabs .nav-item button:hover a {
-        color: black;
-    }
-    
-    .services-tabs .nav-item button a {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: black;
-    }
-    
-    .services-tabs .nav-item button:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 2px solid aliceblue;
-    }
-    
-    .services-iten-content h1 {
+    .services-item-content h1 {
         font-size: 2rem;
         font-weight: bold;
         text-transform: capitalize;
         text-align: right;
     }
     
-    .services-iten-content p {
+    .services-item-content p {
         font-size: 1rem;
         padding: .6rem 1rem .5rem 1rem;
         max-width: 300px;
@@ -562,19 +427,13 @@
         color: black;
     }
     
-    .service-item-lists {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .service-item-lists .number-box span {
-        font-size: 5rem;
+    .number-box span {
+        font-size: 3rem;
         color: #303ef7;
         position: relative;
     }
     
-    .service-item-lists .number-box span:after {
+    .number-box span:after {
         content: '';
         display: block;
         width: 100%;
@@ -585,27 +444,21 @@
         background: #303ef7;
     }
     
-    .service-items-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .service-items-list .number-box {
+    .services-item-content .number-box {
         width: 30%;
     }
     
-    .service-items-list .text-box {
+    .services-item-content .text-box {
         width: 70%;
     }
     
-    .service-items-list .text-box h5 {
-        font-size: 2rem;
+    .services-item-content .text-box h5 {
+        font-size: 1.5rem;
         font-weight: bold;
     }
     
-    .service-items-list .text-box p {
-        font-size: 1rem;
+    .services-item-content .text-box p {
+        font-size: .9rem;
     }
     
     .service-item-btn {
@@ -618,4 +471,73 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+    
+    .list-row {
+        padding-bottom: 50px;
+    }
+    /*-----section two------*/
+    
+    .section-two {
+        background: #eee;
+        clip-path: polygon(50% 0%, 100% 0, 100% 92%, 79% 100%, 48% 100%, 0 92%, 0 0);
+    }
+    
+    .services-tabs .nav-item button {
+        background: #3d3d3d !important;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50% !important;
+        transition: .5s ease;
+    }
+    
+    .services-tabs .nav {
+        position: relative;
+    }
+    
+    .services-tabs .nav:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #303ef7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+    }
+    
+    .services-tabs .nav-item button:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #303ef7;
+        background: #f9f9f9;
+        position: absolute;
+        top: -6px;
+        margin: auto;
+        bottom: 0;
+        border-radius: 100%;
+        right: -6px;
+        z-index: -1;
+        padding: 5rem;
+    }
+    
+    .services-tabs button:hover {
+        background: blue !important;
+    }
+    
+    .services-tabs .nav-item button svg {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+    }
+    
+    .services-tabs .nav-item span {
+        font-size: 1.2rem;
+        color: white;
     }

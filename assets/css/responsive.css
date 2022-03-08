@@ -52,3 +52,38 @@
             display: none;
         }
     }
+    
+    @media only screen and (max-width: 767px) {
+        .services-tabs .nav:after {
+            display: none;
+        }
+        .services-tabs .nav-item button span {
+            display: none;
+        }
+        .services-tabs .nav-item button {
+            width: 50px !important;
+            height: 50px;
+        }
+        .services-tabs .nav-item button:after {
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            left: -6px;
+            top: 0;
+        }
+        .services-item-content h1 {
+            text-align: center;
+        }
+        .services-item-content p {
+            max-width: 80% !important;
+        }
+        .list-row {
+            margin-top: 0px !important;
+        }
+        .services-item-content h1 {
+            margin-top: 10px;
+        }
+        .services-item-content p {
+            display: none;
+        }
+    }
