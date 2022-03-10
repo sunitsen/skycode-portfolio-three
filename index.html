@@ -24,524 +24,211 @@
     <title>Hello, world!</title>
 </head>
 
+
+
+
 <body>
-    <!-------------header-------------->
+
     <header>
-        <div class="container p-0">
-            <div class="row">
-                <!--template date time-->
-                <div class="col-xl-12 px-2">
-                    <div class="template-time-date d-flex justify-content-between align-items-center">
-                        <!--date-->
-                        <div class="date d-flex justify-content-start align-items-center ms-2">
-                            <i class="bi bi-calendar4"></i><span class="ms-2">Friday, March 4, 2022</span>
-                        </div>
-                        <!--time-->
-                        <div class="time d-flex justify-content-start align-items-center me-3">
-                            <i class="bi bi-stopwatch"></i><span class="ms-2">5:07 PM</span>
-                        </div>
-                    </div>
-                </div>
-                <!--template main navbar-->
-                <div class="col-xl-12 px-sm-0 px-3">
-                    <div class="main-navbar">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-                            <div class="container p-0">
-                                <a class="navbar-brand" href="#">sky<span>code</span></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+        <div class="header-overlay"></div>
+        <div class="main-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><span>sky</span><span>code</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                                <div class="collapse navbar-collapse" id="main_nav">
-                                    <ul class="navbar-nav ms-auto mt-4">
-                                        <li class="nav-item active"><a class="nav-link" href="#">Home </a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#"> Our service </a></li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">About Us </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Portfolio </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Our Blog </a>
-                                        </li>
-                                        <!-- <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Hover me </a>
-                                            <ul class="dropdown-menu fade-up">
-                                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                                                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                                                <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
-                                            </ul>
-                                        </li> -->
-                                    </ul>
-                                    <ul class="navbar-nav ms-auto mt-4">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"><span><i class="bi bi-telephone me-2"></i></span> Contact Us</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <div class="search-toggle">
-                          <button class="search-icon icon-search"><i class="bi bi-search"></i></button>
-                          <button class="search-icon icon-close"><i class="bi bi-x-lg"></i></button>
-                        </div>
-                      </li>
-                      <!---search box--->
-
-                      <div class="search-container">
-                        <form>
-                          <input type="text" name="q" id="search-terms" placeholder="Search terms..." />
-                          <button type="submit" name="submit" value="Go" class="search-icon search-icon-custom">
-                            <i class="fa fa-fw fa-search"></i>
-                          </button>
-                        </form>
-                      </div>
-                    </ul>
-                  </div>
-                  <!-- navbar-collapse.// -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Benefits</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Drop down</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Conitact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="signUp" class="nav-link" href="#">Sign up</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
                 </div>
-                <!-- container-fluid.// -->
-              </nav>
-            </div>
-          </div>
+            </nav>
         </div>
-      </div>
     </header>
-    <!-------------hero section-------------->
-    <section id="hero-section" class="hero-section">
-      <div class="social-media">
-        <ul>
-          <li>
-            <a href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-twitter"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-instagram"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+    <!--animation---->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-----------section-one---------->
+    <section id="section-one" class="section-one">
+        <div class="container">
+            <div class="hero">
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 col-12">
+                            <!----Hero content---->
+                            <div class="hero-content">
+                                <div class="title-group">
+                                    <h6 class="sub-title">Lorem ipsum dolor sit amet.</h6>
+                                    <h1 class="title">our only concern is your education</h1>
                                 </div>
-                                <div class="container-fluid p-0">
-                                    <div id="hero" class="hero">
-                                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-                                            <ol class="carousel-indicators">
-                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="assets/template-images/hero3.jpg" alt="First slide" />
-                                                    <div class="hero-slider-caption">
-                                                        <div class="parallax">
-                                                            <div class="div-animation-hero layer source-layer4">
-                                                                <a href="#">
-                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                                                </a>
-                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
-                                                                <button type="button" class="hero-btn">Explore More..</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="assets/template-images/hero1.jpg" alt="Second slide" />
-                                                    <div class="hero-slider-caption">
-                                                        <div class="parallax">
-                                                            <div class="div-animation-hero layer source-layer4">
-                                                                <a href="#">
-                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                                                </a>
-                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
-                                                                <button type="button" class="hero-btn">Explore More..</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="assets/template-images/hero2.jpg" alt="Third slide" />
-                                                    <div class="hero-slider-caption">
-                                                        <div class="parallax">
-                                                            <div class="div-animation-hero layer source-layer4">
-                                                                <a href="#">
-                                                                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                                                </a>
-                                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit exercitationem. Omnis!</h5>
-                                                                <button type="button" class="hero-btn">Explore More..</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                                                <span class="" aria-hidden="true"><i class="bi bi-caret-left"></i></span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                                                <span class="" aria-hidden="true"><i class="bi bi-caret-right"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="hero-btn">
+                                    <button type="button" class="get-start">Get start</button>
                                 </div>
-                                </section>
-
-                                <section id="section-two" class="section-two py-5">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <div class="section-title py-3">
-                                                    <div class="sub-title text-center">Our Services</div>
-                                                    <div class="title text-center">What We Offer</div>
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                        <!--------Hero card---------->
+                        <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-center align-items-center">
+                            <div class="hero-card bg-info">
+                                <div class="hero-card-inner">
+                                    <a href="#">
+                                        <div class="ratio ratio-4x3">
+                                            <img src="assets/template-images/hero1.jpg" alt="">
                                         </div>
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <div class="services-tabs">
-                                                    <ul class="nav nav-pills d-flex justify-content-between align-items-center w-70 m-auto mb-3" id="pills-tab" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <button class="nav-link active" id="service-item-one" data-bs-toggle="pill" data-bs-target="#service-item1" type="button" role="tab" aria-controls="service-item1" aria-selected="true">
-                    <i class="fas fa-desktop"></i>
-                    <br />
+                                    </a>
+                                    <div class="hero-card-contents">
+                                        <div class="hero-card-content">
+                                            <div class="hero-card-title-group">
+                                                <h1 class="title">UI/UX Design</h1>
+                                                <h5 class="sub-title">Lorem, ipsum dolor.</h5>
+                                            </div>
 
-                    <span> Web Development </span>
-                  </button>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <button class="nav-link" id="service-item-two" data-bs-toggle="pill" data-bs-target="#service-item2" type="button" role="tab" aria-controls="service-item2" aria-selected="false">
-                    <i class="fab fa-atlassian"></i>
-                    <br />
-                    <span> UI/UX</span>
-                  </button>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <button class="nav-link" id="service-item-three" data-bs-toggle="pill" data-bs-target="#service-item3" type="button" role="tab" aria-controls="service-item3" aria-selected="false">
-                    <i class="fas fa-edit"></i>
-                    <br />
-                    <span>Content Writing</span>
-                  </button>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <button class="nav-link" id="service-item-four" data-bs-toggle="pill" data-bs-target="#service-item4" type="button" role="tab" aria-controls="service-item4" aria-selected="false">
-                    <i class="fas fa-cogs"></i>
-                    <br />
-                    <span> SEO</span>
-                  </button>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tab-content mt-5" id="pills-tabContent">
-                                                        <div class="tab-pane fade show active" id="service-item1" role="tabpanel" aria-labelledby="service-item-one">
-                                                            <div class="container">
-                                                                <div class="row my-5">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-content-center m-auto order-md-0 order-2">
-                                                                        <div class="services-item-content">
-                                                                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 order-md-0 order-1">
-                                                                        <a href="#">
-                                                                            <div class="ratio ratio-16x9" style="--bs-aspect-ratio: 130.25%">
-                                                                                <img src="assets/template-images/team3.avif" alt="" />
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center align-content-center m-auto order-md-0 order-3">
-                                                                        <div class="services-item-content">
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                            <button type="button" class="service-item-btn">Viwe all project</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row list-row">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-center align-content-center">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-center align-content-center">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-center align-content-center">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="service-item2" role="tabpanel" aria-labelledby="service-item-two">
-                                                            <div class="container">
-                                                                <div class="row my-5">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 d-flex justify-content-center align-content-center order-md-0 order-2">
-                                                                        <div class="services-item-content">
-                                                                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-1">
-                                                                        <a href="#">
-                                                                            <div class="ratio ratio-16x9" style="--bs-aspect-ratio: 130.25%">
-                                                                                <img src="assets/template-images/team4.avif" alt="" />
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-3">
-                                                                        <div class="services-item-content">
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                            <button type="button" class="service-item-btn">Viwe all project</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row list-row">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="service-item3" role="tabpanel" aria-labelledby="service-item-three">
-                                                            <div class="container">
-                                                                <div class="row my-5">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-2">
-                                                                        <div class="services-item-content">
-                                                                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-1">
-                                                                        <a href="#">
-                                                                            <div class="ratio ratio-16x9" style="--bs-aspect-ratio: 130.25%">
-                                                                                <img src="assets/template-images/team5.avif" alt="" />
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-3">
-                                                                        <div class="services-item-content">
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                            <button type="button" class="service-item-btn">Viwe all project</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row list-row">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="service-item4" role="tabpanel" aria-labelledby="service-item-four">
-                                                            <div class="container">
-                                                                <div class="row my-5">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-2">
-                                                                        <div class="services-item-content">
-                                                                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-1">
-                                                                        <a href="#">
-                                                                            <div class="ratio ratio-16x9" style="--bs-aspect-ratio: 130.25%">
-                                                                                <img src="assets/template-images/team6.avif" alt="" />
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 order-md-0 order-3">
-                                                                        <div class="services-item-content">
-                                                                            <p>
-                                                                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
-                                                                                fly into your mouth
-                                                                            </p>
-                                                                            <button type="button" class="service-item-btn">Viwe all project</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row list-row">
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                                                                        <div class="service-items-list">
-                                                                            <div class="number-box"><span>01</span></div>
-                                                                            <div class="text-box">
-                                                                                <h5>Search Engine Optimization</h5>
-                                                                                <p>Far far away, behind the word mountains</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+
+                                            <div class="d-flex justify-content-between align-items-center">
+
+                                                <div class="hero-card-detail d-flex justify-content-between align-items-center">
+                                                    <div class="price-box">
+                                                        <span>$50.24</span>
+                                                    </div>
+                                                    <div class="rating-box d-flex justify-content-between align-items-center ms-2">
+                                                        <span class="ms-2">4.5</span>
+                                                        <ul class="d-flex justify-content-start align-items-center ms-2">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-half"></i></li>
+
+                                                        </ul>
+                                                        <span class="ms-2">(4,520)</span>
                                                     </div>
                                                 </div>
+
+
+                                            </div>
+
+                                            <!----hero cards button group-->
+                                            <div class="hero-card-btn-group">
+                                                <button type="button">enrole cource</button>
+                                                <button type="button">enrole cource</button>
+
                                             </div>
                                         </div>
                                     </div>
-                                </section>
 
-                                <!-- Main JS -->
-                                <script src="assets/js/jQuary.js"></script>
-                                <script src="assets/js/main.js"></script>
-                                <!-- BootStrap JS -->
-                                <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-                                <script src="assets/js/bootstrap.bundle.min.js"></script>
-                                <!-- FontAwsome JS -->
-                                <script src="assets/fontawesome-free-6.0.0-web/js/all.js"></script>
-                                <script src="assets/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-                                <script src="assets/js/isotop.js"></script>
-                                <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-                                <script></script>
+                                </div>
+                            </div>
+                        </div>
 
-                                <script>
-                                    //isotop
-                                    // init Isotope
-                                    var $grid = $(".isotop-grid").isotope({
-                                        // options
-                                    });
-                                    // filter items on button click
-                                    $(".isotop-btn-control").on("click", "li", function() {
-                                        var filterValue = $(this).attr("data-filter");
-                                        $grid.isotope({
-                                            filter: filterValue,
-                                        });
-                                    });
+                    </div>
+                </div>
+            </div>
+    </section>
 
-                                    //owl slider
-                                    $(".owl-carousel").owlCarousel({
-                                        loop: true,
-                                        margin: 50,
-                                        autoplay: true,
-                                        autoplayTimeout: 4000,
-                                        autoplayHoverPause: true,
-                                        nav: false,
-                                        responsive: {
-                                            0: {
-                                                items: 1,
-                                            },
-                                            600: {
-                                                items: 2,
-                                            },
-                                            1000: {
-                                                items: 3,
-                                            },
-                                        },
-                                    });
-                                </script>
+
+
+
+
+
+
+
+
+
+    <!-- Main JS -->
+    <script src="assets/js/jQuary.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- BootStrap JS -->
+    <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwsome JS -->
+    <script src="assets/fontawesome-free-6.0.0-web/js/all.js"></script>
+    <script src="assets/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotop.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script></script>
+
+    <script>
+        //isotop
+        // init Isotope
+        var $grid = $(".isotop-grid").isotope({
+            // options
+        });
+        // filter items on button click
+        $(".isotop-btn-control").on("click", "li", function() {
+            var filterValue = $(this).attr("data-filter");
+            $grid.isotope({
+                filter: filterValue,
+            });
+        });
+
+        //owl slider
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 50,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

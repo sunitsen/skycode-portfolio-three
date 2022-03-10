@@ -1,89 +1,16 @@
-    /*about us*/
-    
-    @media only screen and (max-width: 1200px) {
-        .div-animation-hero {
-            height: 40%;
-            width: 70%;
-        }
+@media only screen and (max-width: 991px) {
+    .main-navbar .nav-item {
+        margin-left: 0 !important;
+        text-align: center;
     }
-    /*----main navbar ------*/
-    
-    @media all and (min-width: 992px) {
-        .navbar .dropdown-menu-end {
-            right: 0;
-            left: auto;
-        }
-        .navbar .nav-item .dropdown-menu {
-            display: block;
-            opacity: 0;
-            visibility: hidden;
-            transition: .3s;
-            margin-top: 0;
-        }
-        .navbar .nav-item:hover .nav-link {
-            color: #fff;
-        }
-        .navbar .dropdown-menu.fade-down {
-            top: 80%;
-            transform: rotateX(-75deg);
-            transform-origin: 0% 0%;
-        }
-        .navbar .dropdown-menu.fade-up {
-            top: 180%;
-        }
-        .navbar .nav-item:hover .dropdown-menu {
-            transition: .3s;
-            opacity: 1;
-            visibility: visible;
-            top: 100%;
-            transform: rotateX(0deg);
-        }
+    .main-navbar .navbar a:hover:before,
+    .navbar li:hover>a:before,
+    .navbar .active:before {
+        visibility: visible;
+        width: 10%;
     }
-    
-    @media only screen and (max-width: 991px) {
-        .social-media {
-            display: none;
-        }
-        .div-animation-hero {
-            display: none;
-        }
-        .carousel-control-next,
-        .carousel-control-prev {
-            display: none;
-        }
+    #signUp {
+        width: 200px;
+        margin: auto;
     }
-    
-    @media only screen and (max-width: 767px) {
-        .services-tabs .nav:after {
-            display: none;
-        }
-        .services-tabs .nav-item button span {
-            display: none;
-        }
-        .services-tabs .nav-item button {
-            width: 50px !important;
-            height: 50px;
-        }
-        .services-tabs .nav-item button:after {
-            padding: 0;
-            width: 60px;
-            height: 60px;
-            left: -6px;
-            top: 0;
-        }
-        .services-item-content h1 {
-            text-align: center;
-        }
-        .services-item-content p {
-            max-width: 80% !important;
-        }
-        .list-row {
-            margin-top: 0px !important;
-        }
-        .services-item-content h1 {
-            margin-top: 10px;
-        }
-        .services-item-content p {
-            display: none;
-        }
-    }
+}

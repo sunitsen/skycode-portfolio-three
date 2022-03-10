@@ -27,73 +27,64 @@
     
     ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
     
     a {
         text-decoration: none;
     }
+    /*----color code----*/
+    
+    .color-one {
+        background: #051966;
+    }
     /*===========Header========*/
     
-    .template-time-date {
-        color: white;
-    }
-    
-    .template-time-date .date,
-    .time i {
-        font-size: 1.1rem;
-    }
-    
-    .template-time-date .date,
-    .time span {
-        font-size: .8rem;
-    }
-    
-    header {
+    .header-overlay {
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        z-index: 11;
-        border-bottom: .5px solid #EEE;
+        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 31%, 0 44%);
+        /*   opacity: .5; */
+        background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90);
     }
     
-    .main-navbar {
-        /* background-color: rgb(20, 19, 17); */
+    .section-one .hero-content,
+    .card {
+        z-index: 1;
     }
+    /*-----main navbar------*/
     
-    .main-navbar .navbar-brand {
-        font-size: 2.5rem;
+    .main-navbar .navbar-brand span:nth-child(1) {
+        color: #ffffff;
         font-weight: bold;
-        color: rgb(255, 255, 255);
     }
     
-    .main-navbar .nav-item {
-        margin-left: 30px;
-    }
-    
-    .main-navbar .nav-item .nav-link {
-        font-size: 1.1rem;
-    }
-    
-    .main-navbar .nav-item.active .nav-link {
-        color: white;
-        font-size: 1.2rem;
-    }
-    
-    .main-navbar .navbar-brand span {
-        font-size: 1.5rem !important;
-        font-weight: bold;
-        color: #303ef7;
-    }
-    
-    .main-navbar .navbar-toggler:focus {
-        box-shadow: none !important;
-        outline: none !important;
-        border: none !important;
-    }
-    
-    .main-navbar .nav-item {
+    .main-navbar .navbar .nav-item {
         position: relative;
+        margin-left: 50px;
+        font-size: .9rem;
+    }
+    
+    .main-navbar .nav-link {
+        color: #eee !important;
+        transition: .5s ease;
+    }
+    
+    .main-navbar .nav-link.active {
+        color: #ff7800 !important;
+    }
+    
+    .main-navbar .nav-link:hover {
+        color: #ff7800 !important;
+    }
+    
+    .main-navbar .nav-link:hover {
+        color: #1b3d9f;
     }
     
     .main-navbar .nav-link:before {
@@ -101,9 +92,11 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        top: 3.3rem;
+        bottom: 0rem;
         left: 0;
-        background-color: #303ef7;
+        right: 0;
+        margin: auto;
+        background-color: #ff7800;
         visibility: hidden;
         width: 0px;
         transition: all 0.3s ease-in-out 0s;
@@ -119,425 +112,137 @@
     .main-navbar .navbar-nav:nth-child(2) .nav-link:before {
         display: none;
     }
-    /*---search box----*/
     
-    .search-icon {
-        font-size: 32px;
-        color: white;
-        border: 0;
-        outline: none;
+    #signUp {
+        background: #efefef;
+        padding: .5rem 2rem .5rem 2rem;
+        color: blue !important;
     }
     
-    .search-toggle .search-icon.icon-close {
-        display: none;
+    #signUp:hover {
+        color: #ff7800 !important;
+    }
+    /*-----section-one-------*/
+    
+    .hero .row .col-12 {
+        margin-top: 5rem;
     }
     
-    .search-toggle.opened .search-icon.icon-search {
-        display: none;
-    }
-    
-    .search-toggle.opened .search-icon.icon-close {
-        display: block;
-    }
-    
-    .search-icon {
-        color: #303ef7;
-        transition: .5s ease;
-    }
-    
-    .search-icon:hover {
-        color: #fff;
-    }
-    
-    .search-container {
-        position: relative;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
-        max-height: 0;
-        overflow: hidden;
-        background-color: #eee;
-    }
-    
-    .search-container.opened {
-        max-height: 100px;
-    }
-    
-    .search-container input[type="text"] {
-        outline: none;
-        font-size: 1.6rem;
-        margin: 18px;
-        width: 300px;
-        background-color: inherit;
-        border: 0;
-    }
-    
-    .search-container .search-icon {
-        vertical-align: middle;
-    }
-    
-    .search-container {
-        position: absolute;
-        left: 15px;
-        width: 100%;
-        top: 100px;
-    }
-    
-    .search-icon-custom {
-        position: absolute;
-        right: 10px;
-        top: 15px;
-        background: none;
-    }
-    
-    .search-toggle {
-        margin-top: -4px;
-    }
-    
-    .search-toggle button {
-        background: none;
-    }
-    
-    .main-navbar {
-        position: relative;
-    }
-    /*--hero section---*/
-    /*----social media------*/
-    
-    .hero-section {
-        position: relative;
-    }
-    
-    .social-media {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 50px;
-        height: auto;
-        background: #120f0e41;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .social-media ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .social-media ul li {
-        margin-top: 20px;
-    }
-    
-    .social-media ul li a {
-        background: #ffffff;
-        padding: .5rem;
-        transition: .5s ease;
-    }
-    
-    .social-media ul li a i {
-        color: #303ef7;
-    }
-    
-    .social-media ul li a:hover {
-        background: black;
-    }
-    
-    .social-media ul li a:hover i {
-        color: #ffffff;
-    }
-    /* transition duration to control the speed of fade effect */
-    
-    .carousel-item {
-        transition: transform 2.6s ease-in-out;
-    }
-    
-    .carousel-fade .active.carousel-item-start,
-    .carousel-fade .active.carousel-item-end {
-        transition: opacity 0s 2.6s;
-    }
-    
-    .hero .carousel-inner .carousel-item img {
-        height: 100vh;
-    }
-    
-    .carousel-inner {
-        position: relative;
-    }
-    
-    .carousel-control-next,
-    .carousel-control-prev {
-        position: absolute;
-        background: #141311;
-        width: 50px;
-        height: 50px;
-        z-index: 2;
-    }
-    
-    .carousel-control-next {
-        left: 70px;
-        bottom: 0;
-        margin: auto 0;
-    }
-    
-    .carousel-control-prev {
-        left: 15px;
-        bottom: 0;
-        margin: auto 0;
-    }
-    
-    .carousel-control-next,
-    .carousel-control-prev span i {
-        font-size: 2rem;
-    }
-    
-    .hero .carousel-indicators li {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-left: 20px;
-    }
-    
-    .parallax {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        top: 0;
-        left: 0;
-        z-index: 111;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        overflow: hidden;
-    }
-    
-    .div-animation-hero {
-        position: absolute;
-        width: fit-content;
-        height: 150px;
-        padding: 1rem;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    
-    .hero-slider-caption h1 {
-        font-size: 4rem;
-        width: 700px;
-        font-weight: bold;
-        color: white;
-        padding: .5rem 1rem .5rem 1rem !important;
-    }
-    
-    .hero-slider-caption h5 {
-        color: white;
-        font-size: 1.5rem;
-        width: 700px;
-        font-weight: normal;
-        padding: .5rem 1rem .5rem 1rem !important;
-    }
-    
-    .hero-slider-caption button {
-        padding: .5em 2rem .5rem 2rem;
-        background: #141311;
-        border: none;
-        color: white;
-        margin-top: 2rem;
-        margin-left: 14px;
-    }
-    
-    .carousel-item {
-        position: relative;
-    }
-    
-    .carousel-item:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: black;
-        left: 0;
-        top: 0;
-        position: absolute;
+    .hero-card {
         z-index: 1;
-        opacity: .5;
+        background: white;
     }
-    /*---------services section-----------*/
+    /* .hero .row .col-12 {
+        margin-top: 15rem;
+    } */
     
-    .section-title {
-        text-align: left;
-        z-index: 1;
-    }
-    
-    .section-title .sub-title {
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-transform: capitalize;
+    .hero-card .hero-card-content {
+        background: rgb(255, 255, 255);
     }
     
-    .section-title .title {
+    .hero-card-content .title {
         font-size: 2rem;
         font-weight: bold;
-        text-transform: capitalize;
+        color: black;
+        text-transform: uppercase;
     }
     
-    .our-service {
-        padding: .1rem 2rem .1rem 2rem;
+    .hero-card-content .sub-title {
+        font-size: .9rem;
+        color: #AEB1B6;
+    }
+    
+    .hero-card-detail .price-box span {
         font-size: 1.2rem;
         font-weight: bold;
-        margin-top: 1rem;
-        background: transparent;
-        border: 1px solid #eee;
-        color: rgb(0, 0, 0);
-        transition: .5s ease;
     }
     
-    .our-service:hover {
-        background: black;
-        color: white;
+    .hero-card-detail ul li {
+        font-size: .8rem;
+        margin-left: .2rem;
+        color: #ff7800;
     }
     
-    .services-items-content {
+    .hero-card-detail .rating-box span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .hero-card-btn-group {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     
-    .services-item-content h1 {
-        font-size: 2rem;
+    .hero-card-btn-group button {
+        font-size: 1rem;
         font-weight: bold;
         text-transform: capitalize;
-        text-align: right;
-    }
-    
-    .services-item-content p {
-        font-size: 1rem;
-        padding: .6rem 1rem .5rem 1rem;
-        max-width: 300px;
-        margin: auto;
-        line-height: 1.7;
-        color: black;
-    }
-    
-    .number-box span {
-        font-size: 3rem;
-        color: #303ef7;
-        position: relative;
-    }
-    
-    .number-box span:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: #303ef7;
-    }
-    
-    .services-item-content .number-box {
-        width: 30%;
-    }
-    
-    .services-item-content .text-box {
-        width: 70%;
-    }
-    
-    .services-item-content .text-box h5 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    
-    .services-item-content .text-box p {
-        font-size: .9rem;
-    }
-    
-    .service-item-btn {
-        padding: .5rem 3rem .5rem 3rem;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: black;
+        padding: .5rem .5rem .5rem .5rem;
         border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    
-    .list-row {
-        padding-bottom: 50px;
-    }
-    /*-----section two------*/
-    
-    .section-two {
-        background: #eee;
-        clip-path: polygon(50% 0%, 100% 0, 100% 92%, 79% 100%, 48% 100%, 0 92%, 0 0);
-    }
-    
-    .services-tabs .nav-item button {
-        background: #3d3d3d !important;
-        position: relative;
-        width: 150px;
-        height: 150px;
-        border-radius: 50% !important;
+        border-radius: .2rem;
         transition: .5s ease;
     }
     
-    .services-tabs .nav {
-        position: relative;
-    }
-    
-    .services-tabs .nav:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: #303ef7;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        z-index: -1;
-    }
-    
-    .services-tabs .nav-item button:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #303ef7;
-        background: #f9f9f9;
-        position: absolute;
-        top: -6px;
-        margin: auto;
-        bottom: 0;
-        border-radius: 100%;
-        right: -6px;
-        z-index: -1;
-        padding: 5rem;
-    }
-    
-    .services-tabs button:hover {
-        background: blue !important;
-    }
-    
-    .services-tabs .nav-item button svg {
+    .hero-card-btn-group button:nth-child(1) {
+        background: #FF7468;
         color: white;
-        font-size: 1.5rem;
-        margin-bottom: .2rem;
     }
     
-    .services-tabs .nav-item span {
+    .hero-card-btn-group button:nth-child(2):hover {
+        background: #FF7468;
+        color: white;
+    }
+    
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-content .title-group .title {
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        max-width: 405px;
+    }
+    
+    .hero-content .title-group .sub-title {
+        font-size: .8rem;
+        color: white;
+        text-transform: uppercase;
+        max-width: 410px;
+    }
+    
+    .hero-content button {
+        padding: 2rem;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #eee;
+        background: none;
+        border-radius: 50%;
         font-size: 1.2rem;
+        font-weight: bold;
         color: white;
+        transition: .5s ease;
+    }
+    
+    .hero-content button:hover {
+        background: #ff7468;
+    }
+    
+    .hero-card-inner {
+        width: 400px;
+    }
+    
+    .hero-card-inner .hero-card-contents {
+        background: white;
+    }
+    
+    .hero-card-inner .hero-card-content {
+        background: white;
+        padding-block: 2rem;
+        width: 75%;
+        margin: auto;
     }
